@@ -1,0 +1,37 @@
+@import url("reset.css");
+
+
+
+* {
+	/* color: white; */
+}
+p {
+	color: grey;
+}
+.subtitle {
+	color: red;
+}
+.title{
+	color: orange;
+}
+.header, .main a {
+	color: blue;
+}
+.text > p {
+	color: grey;
+}
+.items + p {
+	color: brown;
+}
+.article ~ p {
+	color: blueviolet;
+}
+[class*="scope-reg"] > p{
+	color: black;
+}
+.main-section {
+	color: blue;
+}
+#container-for-blogs p {
+	color: green;
+}
