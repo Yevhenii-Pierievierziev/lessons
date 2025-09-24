@@ -2,7 +2,7 @@
 
 
 * {
-	color: yellow;
+	color: darkcyan;
 }
 
 span {
@@ -48,3 +48,4 @@ h2 + p {
 main ~ footer {
 	color: aquamarine;
 }
+
