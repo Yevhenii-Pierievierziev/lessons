@@ -1,0 +1,371 @@
+/* =================================Підключення обнулення стилів======================================= */
+
+@import url("reset.css");
+
+/* =================================================================================================== */
+/* =================================Підключення шрифів================================================ */
+
+@import url(fonts.css);
+
+/* =================================================================================================== */
+/* =================================Плавна прокрутка сайту============================================ */
+
+:root {
+	scroll-behavior: smooth;
+}
+
+/* =================================================================================================== */
+/* =================================Основні параметри сторінки======================================== */
+
+body{
+	background-color: #D9D9D9;
+	color: #343434;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+/* ========================================================================================== */
+/* =================================Контейнер================================================ */
+
+.wrapper{
+   max-width: 1440px;
+   margin: 0 auto;
+	background-color: #FFFFFF;
+	box-shadow: 0 0 10px rgb(52, 52, 52, 0.5);
+	text-align: center;
+}
+
+/* ======================================================================================= */
+/* =================================Header================================================ */
+
+.header{
+	padding: 20px 0;
+}
+
+.header h1{
+	margin-bottom: 50px;
+	font-family: "Praysire-Demo", serif;
+	font-weight: 500;
+	text-transform: uppercase;
+   font-size: 48px;
+   color: #BA936F;
+   text-shadow: 0px 5px 10px rgb(186, 147, 111, 0.5);
+}
+
+.nav{
+	padding: 20px 0;
+	font-size: 0;
+}
+
+.items{
+	display: inline-block;
+	min-width: 352px;
+	margin-bottom: 15px;
+}
+
+.items li{
+	font-size: 18px;
+	padding: 5px;
+}
+
+.items li a{
+	text-decoration: underline;
+	transition: color 0.3s;
+}
+
+.items li a:hover{
+	color: #BA936F;
+}
+
+/* ====================================================================================== */
+/* =================================MAIN================================================ */
+
+.main {
+	padding: 20px;
+}
+
+.main h2{
+	margin-bottom: 30px;
+	font-family: "Lora", serif;
+	font-weight: 500;
+	text-decoration: underline;
+	font-size: 35px;
+	line-height: 1.3;
+	color: #BA936F;
+}
+
+.main p {
+	margin-bottom: 15px;
+	line-height: 1.3;
+}
+
+
+.main .auto p span{
+	color: #BA936F;
+	text-shadow: 0px 5px 10px rgb(186, 147, 111, 0.5);
+}
+
+.main .comments{
+	color: #343434;
+	font-size: 14px;
+}
+
+
+/* ================================================================================================= */
+/* =================================Це лише приклад================================================ */
+
+.figure{
+	position: relative;
+	max-width: 70rem;
+	min-height: 10rem;
+	background: #343434;
+	overflow: hidden;
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, .8);
+	cursor: pointer;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+
+.figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.figure .figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.figure .figcaption::before {
+	position: absolute;
+	content: '';
+	top: 5rem;
+	right: 5rem;
+	left: 5rem;
+	bottom: 5rem;
+	border: 1px solid #fff;
+	box-shadow: 0 0 0 5rem rgba(255, 255, 255, 0.2);
+	opacity: 0;
+	transform: scale3d(1.4,1.4,1);
+	transition: opacity 0.32s, transform 0.35s;
+}
+
+.figure .figcaption h3{
+	font-size: 5vw;
+	opacity: 0;
+	transform: scale(1.5);
+	transition: opacity 0.32s, transform 0.35s;
+}
+
+.figure:hover .figcaption::before,
+.figure:hover h3{
+	opacity: 1;
+	transform: scale3d(1,1,1);
+}
+
+.figure:hover img{
+	opacity: 0.4;
+}
+
+
+/* ================================================================================================= */
+/* ========================================Section3================================================= */
+
+.text span{
+	color: #BA936F;
+}
+
+.text li{
+	padding: 20px;
+}
+
+.width{
+	width: auto;
+}
+
+.max-width{
+	max-width: 75%;
+}
+
+.min-width{
+	max-width: 704px;
+	min-width: 100px;
+}
+
+.text ul li{
+	margin-bottom: 15px;
+	background-color: #FDEFE6;
+	text-align: start;
+	border: 1px solid #CECECE;
+	color: #343434;
+}
+
+/* ================================================================================================= */
+/* ========================================Section4================================================= */
+
+.height{
+	height: auto;
+}
+
+.max-height{
+	max-height: 200px;
+}
+
+.min-height{
+	min-height: 100px;
+}
+
+/* ================================================================================================= */
+/* ========================================Section5================================================= */
+
+.content-box{
+	box-sizing: content-box;
+}
+
+.border-box{
+	box-sizing: border-box;
+}
+
+/* ================================================================================================= */
+/* ========================================Section6================================================= */
+
+.visible {
+	height: 60px;
+	overflow: visible;
+}
+.hidden {
+	height: 60px;
+	overflow: hidden;
+}
+.scroll {
+	height: 60px;
+	overflow: scroll;
+}
+.auto {
+	height: 60px;
+	overflow: auto;
+}
+
+/* ================================================================================================= */
+/* ========================================Section7================================================= */
+
+.top {
+	vertical-align: top;
+}
+.middle {
+	vertical-align: middle;
+}
+.bottom {
+	vertical-align: bottom;
+}
+
+/* ================================================================================================= */
+/* ========================================Section8================================================= */
+
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.inline {
+	display: inline-block;
+}
+
+/* ================================================================================================= */
+/* ========================================Section9================================================= */
+
+.position{
+	margin-bottom: 15px;
+}
+
+.position ul li{
+	display: block;
+	max-width: 704px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* ================================================================================================= */
+/* ========================================Cards==================================================== */
+
+.cards{
+	font-family: "Lato", sans-serif;
+	padding: 40px 0;
+}
+
+.cards-container{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.cards-title{
+	margin-bottom: 82px;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 32px;
+	color: #2F302C;
+}
+
+.cards-items {
+	margin: 0 -34px 82px -34px;
+	font-size: 0;
+}
+
+.item-card {
+	display: inline-block;
+	max-width: 416px;
+	padding: 0 34px;
+	margin-bottom: 24px;
+}
+.card-image {
+	max-width: 60px;
+	display: inline-block;
+}
+
+.card-image img{
+	vertical-align: top;
+	max-width: 100%;
+}
+
+.item-card h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #2F302C;
+
+}
+
+.item-card p {
+	font-weight: medium;
+	color: #7E7F7C;
+}
+
+.content > *{
+	margin-bottom: 24px;
+	line-height: 1.25;
+	font-size: 16px;
+}
+
+
+/* ================================================================================================== */
+/* ========================================Footer==================================================== */
+
+.footer-title{
+	font-size: 24px;
+	padding: 24px;
+}
+
+/* ================================================================================================= */
+/* ================================================================================================= */

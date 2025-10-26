@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@500;700;800&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Whisper of History</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<h1 class="title">CSS-властивості блоків</h1>
+				<nav class="nav">
+					<ul class="items">
+						<li class="list"><a href="#section1" class="list__link">Внутрішні
+								відступи
+								"padding":</a></li>
+						<li class="list"><a href="#section2" class="list__link">Зовнішні
+								відступи
+								"margin":</a></li>
+						<li class="list"><a href="#section3" class="list__link">Ширина блоку
+								"width":</a></li>
+					</ul>
+					<ul class="items">
+						<li class="list"><a href="#section4" class="list__link">Властивість
+								"box-sizing":</a></li>
+						<li class="list"><a href="#section5" class="list__link">Властивість
+								"overflow":</a></li>
+						<li class="list"><a href="#section6" class="list__link">
+								Висота блоку "height":</a></li>
+					</ul>
+					<ul class="items">
+						<li class="list"><a href="#section7" class="list__link">Властивість
+								"vertical-align":</a></li>
+						<li class="list"><a href="#section8" class="list__link">Властивість
+								"display":</a></li>
+						<li class="list"><a href="#section9" class="list__link">Центрування
+								блоку:</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main class="main">
+				<div id="section1" class="padding">
+					<h2 class="sub-title">Внутрішні відступи "padding"</h2>
+					<div class="text">
+						<p>Властивість <span>padding</span> — це внутрішній відступ.
+							Використовується для
+							відступів від кордону блоку всередину блоку, а не між блоками. Значення
+							можуть бути лише додатними, тобто більше або
+							рівне нулю.
+						</p>
+						<div class="figure">
+							<img src="img/01.jpg" alt="yoga">
+							<div class="figcaption">
+								<h3>Padding</h3>
+							</div>
+						</div>
+						<p class="comments">
+							*Всі властивості, що використанні в цьому прикладі були лише для
+							демонстрації роботи padding
+						</p>
+						<p><span>Padding</span> — це відступи всередині елемента, тобто від країв
+							(рамки) до його контенту.
+
+							Не успадковується.
+
+							Якщо значення задано у відсотках — відсоток береться від ширини
+							батьківського елемента, навіть для вертикальних відступів.
+
+							Для елементів типу inline (наприклад, span) внутрішній відступ
+							зверху та знизу може поводитися непередбачувано.
+							Якщо потрібен стабільний результат — використовуй inline-block або
+							block.
+						</p>
+					</div>
+				</div>
+				<div id="section2" class="margin">
+					<h2 class="sub-title">Зовнішні відступи "margin":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>margin</span> — це зовнішній відступ.
+							Використовується для відступів між блоками (елементами), рекомендується
+							робити відступи зверху вниз (margin-bottom) зліва на право. Значення
+							можуть бути від'ємними! НЕ успадковується.
+						</p>
+						<div class="figure">
+							<img src="img/01.jpg" alt="yoga">
+							<div class="figcaption">
+								<h3>Margin</h3>
+							</div>
+						</div>
+						<p class="comments">
+							*Всі властивості, що використанні в цьому прикладі були лише для
+							демонстрації роботи margin
+						</p>
+						<p><span>Margin</span> — має такі ж самі параметри, що і властивість
+							"padding". Правило: margin-top та margin-bottom на inline елементи не
+							діють, тому можна навіть і не вказувати
+						</p>
+					</div>
+				</div>
+				<div id="section3" class="width">
+					<h2 class="sub-title">Ширина блоку "width":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>width</span> — чітко задає ширину блочного
+							(блочно-рядкового) об'єкту, НЕ працює з рядковими об'єктами
+						</p>
+						<ul class="width-example">
+							<li class="width"><span>auto</span> - (за замовченням) автоматичний
+								розмір.</li>
+							<li class="max-width">Властивість <span>max-width</span> – встановлює
+								максимальну
+								ширину блочних (блочно-рядкових) тегів, тобто блок не буде більшим за
+								вказану ширину. Не успадковується.</li>
+							<li class="min-width">Властивість <span>min-width</span> — встановлює
+								мінімальну
+								ширину блочних (блочно-рядкових) тегів, тобто блок не буде меншим за
+								вказану ширину. Не успадковується.</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section4" class="box-sizing">
+					<h2 class="sub-title">Властивість "box-sizing":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>box-sizing</span> — Застосовується для зміни алгоритму
+							обчислення величин. Значення властивості:
+						</p>
+						<ul class="box-sizing-example">
+							<li class="content-box"><span>content-box</span> - (за замовченням) додає
+								відступи до розміру об'єкта;
+							</li>
+							<li class="border-box">Властивість <span>border-box</span> значення
+								розмірів
+								враховують відступи.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section5" class="overflow">
+					<h2 class="sub-title">Властивість "overflow":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>overflow</span> — керує відображенням контенту
+							блочного
+							елементу. Не успадковується.
+						</p>
+						<ul class="overflow-example">
+							<li class="visible"><span>visible</span> - відображається увесь контент
+								елемента, навіть за межами встановлених
+								розмірів (за замовченням);
+							</li>
+							<li class="hidden">Властивість <span>hidden</span> відображається
+								тільки
+								контент всередині (блоку) елемента, все інше
+								буде сховано;
+							</li>
+							<li class="scroll"><span>scroll</span> — завжди додаються смужки
+								прокрутки;
+							</li>
+							<li class="auto">Властивість <span>auto</span> — смужки прокрутки
+								додаються лише за необхідністю (якщо контент не вміщується всередині
+								вказаних розмірів блоку).
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section6" class="height">
+					<h2 class="sub-title">Висота блоку "height":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>height</span> — встановлює чітку висоту блочних
+							(блочно-рядкових) тегів. Не
+							успадковується. НЕ працює з рядковими об'єктами
+						</p>
+						<ul class="height-example">
+							<li class="height"><span>auto</span> - (за замовченням) автоматичний
+								розмір.
+							</li>
+							<li class="max-height">Властивість <span>max-height</span> встановлює
+								максимальну висоту блочних (блочно-рядкових) тегів, тобто блок не буде
+								більшим за вказану висоту. Не успадковується.
+							</li>
+							<li class="min-height">Властивість <span>min-height</span> — встановлює
+								мінімальну висоту блочних (блочно-рядкових)
+								тегів, тобто блок не буде меншим за вказану висоту. Не
+								успадковується.
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section7" class="vertical-align">
+					<h2 class="sub-title">Властивість "vertical-align":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>vertical-align</span> — керує вирівнюванням
+							блочно-рядкових та рядкових елементів по вертикалі (осі - Y) Не
+							успадковується.
+						</p>
+						<ul class="vertical-align-example">
+							<li class="top"><span>top</span> — вирівнює по верхньому краю
+							</li>
+							<li class="middle">Властивість <span>middle</span> — вирівнює по
+								центру.
+							</li>
+							<li class="bottom">Властивість <span>bottom</span> — вирівнює по
+								нижньому
+								краю
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section8" class="display">
+					<h2 class="sub-title">Властивість "display":</h2>
+					<div class="text">
+						<p>
+							Властивість <span>display</span> — багатоцільова властивість яка задає
+							глобальні параметри тегу, не успадковується.
+						</p>
+						<ul class="display-example">
+							<li class="block"><span>block</span> — елемент відображається як
+								блочний (встановлено за замовченням для блочних об'єктів);
+							</li>
+							<li class="inline-block">Властивість <span>inline</span> — відображається
+								як
+								рядковий (встановлено за замовченням для рядкових об'єктів);
+							</li>
+							<li class="inline">Властивість <span>inline-block</span> — елемент
+								відображається як рядковий, але з можливістю використання усіх
+								CSS-властивостей (блочно-рядковий);
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="section9" class="position">
+					<h2 class="sub-title">Центрування блоку:</h2>
+					<div class="text">
+						<ul class="position-example">
+							<li><span>Об'єкт має бути блочним</span>
+							</li>
+							<li><span>Об'єкт має мати меншу ширину за
+									батьківський елемент</span>
+							</li>
+							<li><span>Додаємо властивість margin: 0
+									auto;</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</main>
+			<div class="cards">
+				<div class="cards-container">
+					<h2 class="cards-title">WHY CHOOSE US?</h2>
+					<div class="cards-items">
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/02.svg"
+									alt="global delivery">
+								<h3>global delivery</h3>
+								<p>Experience Hassle-Free Shipping and Seamless Global Connectivity with
+									Our Trustworthy and Efficient Delivery Service, Bringing the World to
+									Your Fingertips!</p>
+							</div>
+						</div>
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/03.svg"
+									alt="free shipping">
+								<h3>free shipping</h3>
+								<p>Shop to Your Heart's Content Without Worrying About Shipping Costs:
+									Our Free Shipping Service Delivers Your Purchases with a Smile,
+									Straight to Your Doorstep!</p>
+							</div>
+						</div>
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/04.svg"
+									alt="24/7 supporting">
+								<h3>24/7 supporting</h3>
+								<p>Shop with Confidence Anytime, Anywhere: Our Free Shipping Service
+									Comes with 24/7 Support to Ensure Your Packages Arrive Safely and On
+									Time!</p>
+							</div>
+						</div>
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/05.svg"
+									alt="daily email">
+								<h3>daily email</h3>
+								<p>Stay Up-to-Date with Your Deliveries: Enjoy the Convenience of Daily
+									Email Updates with Our Free Shipping Service, Making Your Online
+									Shopping Experience Even More Enjoyable!</p>
+							</div>
+						</div>
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/06.svg"
+									alt="easy payment">
+								<h3>easy payment</h3>
+								<p>Shop and Pay with Ease: Our Free Shipping Service Not Only Delivers
+									Your Packages for Free, but Also Offers Easy Payment Options, Making
+									Your Shopping Experience a Breeze!</p>
+							</div>
+						</div>
+						<div class="item-card">
+							<div class="content">
+								<img class="card-image" src="./img/07.svg"
+									alt="monthly voucher">
+								<h3>monthly voucher</h3>
+								<p>More Than Just Free Shipping: Our Service Rewards Your Loyalty with
+									Monthly Vouchers, Giving You More Reasons to Shop and Save on Your
+									Favorite Products!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<h4 class="footer-title">jake7322 © Copyright 2025, Inc. All rights
+					reserved</h4>
+			</footer>
+		</div>
+	</body>
+</html>
