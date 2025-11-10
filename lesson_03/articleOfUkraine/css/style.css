@@ -1,0 +1,50 @@
+@import url("reset.css");
+
+
+* {
+	color: darkcyan;
+}
+
+span {
+	color: paleturquoise;
+}
+
+.article {
+	color: yellowgreen;
+}
+
+#start {
+	color: red;
+}
+
+[target]{
+	color: burlywood;
+}
+
+a[href$="#"]{
+	color:brown;
+}
+
+div[class^="section"]{
+	color:darkkhaki;
+}
+
+h2, ul {
+	color: black;
+}
+
+div span {
+	color: darkgrey;
+}
+
+div > p {
+	color: rebeccapurple;
+}
+
+h2 + p {
+	color: violet;
+}
+
+main ~ footer {
+	color: aquamarine;
+}
