@@ -1,0 +1,77 @@
+@import url("reset.css");
+
+@import url(fonts.css);
+
+body{
+	font-family: "Proxima-Nova", sans-serif;
+	font-weight: 400;
+}
+
+.title{
+	font-family: "Poppins", serif;
+	font-weight: 700;
+}
+
+.sub-title{
+	font-family: "Alef", serif;
+	font-weight: 700;
+}
+
+.font-size{
+	font-size: 20px;
+}
+
+.font-weight{
+	font-weight: 700;
+}
+
+.font-style{
+	font-style: italic;
+}
+
+.line-height{
+	line-height: 3;
+}
+
+.letter-spacing{
+	letter-spacing: 10px;
+}
+
+.word-spacing{
+	word-spacing: 33px;
+}
+
+.color{
+	color: darkcyan;
+}
+
+.text-align{
+	text-align: center;
+}
+
+.text-decoration{
+	text-decoration: line-through;
+	text-decoration-color: burlywood;
+	text-decoration-style: double;
+}
+
+.text-transform{
+	text-transform: uppercase;
+}
+
+.text-shadow{
+	text-shadow: 10px 10px 5px blue;
+}
+
+.white-space{
+	white-space: pre-line;
+}
+
+.word-break{
+	word-break: break-all;
+}
+
+.link{
+	font-family: "Orbitron", sans-serif;
+	font-weight: 700;
+}
