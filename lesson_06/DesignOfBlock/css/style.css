@@ -275,6 +275,12 @@ div[section="-"]{
 
 .border-item{
 	margin-bottom: 20px;
+	background-color: #252525;
+	text-align: left;
+	padding: 15px 31px 5px 24px;
+	border-radius: 20px;
+	box-shadow: 0px 10px 13px -7px #4CAF50, 5px 5px 15px 5px rgba(0,0,0,0);
+	box-shadow: 0px 10px 13px -7px #4CAF50, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .border-item h3{
@@ -295,24 +301,15 @@ div[section="-"]{
 	margin: 20px 0;
 }
 
-.item-border {
-	background-color: #252525;
-	text-align: left;
-	padding: 15px 31px 5px 24px;
-	border-radius: 20px;
-	box-shadow: 0px 10px 13px -7px #4CAF50, 5px 5px 15px 5px rgba(0,0,0,0);
-	box-shadow: 0px 10px 13px -7px #4CAF50, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.item-border::first-letter{
+.border-item::first-letter{
 	text-transform: uppercase;
 }
 
-.item-border p {
+.border-item p {
 	text-transform: none;
 }
 
-.item-border p code {
+.border-item p code {
 	text-transform: uppercase;
 }
 
@@ -320,38 +317,38 @@ div[section="-"]{
 /* ================================================================================================= */
 /* =====================================border====================================================== */
 
-.--solid {
+.item-border--solid {
 	border: 1px solid #34C759;
 }
 
-.--dotted{
+.item-border--dotted{
 	border: 2px dotted #34C759;
 }
 
-.--dashed{
+.item-border--dashed{
 	border: 2px dashed #34C759;
 }
 
-.--double{
+.item-border--double{
 	border: 3px double #34C759;
 }
 
 /* ================================================================================================= */
 /* ======================================border===================================================== */
 
-.--top {
+.item-border--top {
 	border-top: 1px solid #34C759;
 }
 
-.--right{
+.item-border--right{
 	border-right: 2px dotted #34C759;
 }
 
-.--bottom{
+.item-border--bottom{
 	border-bottom: 2px dashed #34C759;
 }
 
-.--left{
+.item-border--left{
 	border-left: 3px double #34C759;
 }
 
@@ -359,22 +356,22 @@ div[section="-"]{
 /* ================================================================================================= */
 /* ======================================outline==================================================== */
 
-.--outline-width:hover {
+.item-border--outline-width:hover {
 	outline-width: 3px;
 	outline-style: dotted;
 	outline-color: #34C759;
 	outline-offset: 1px;
 }
 
-.--outline-style{
+.item-border--outline-style{
 	outline: 2px dashed #34C759;
 }
 
-.--outline-color{
+.item-border--outline-color{
 	outline: 2px solid #FF9500;
 }
 
-.--outline-offset{
+.item-border--outline-offset{
 	outline: 2px solid #34C759;
 	outline-offset: 5px;
 }
@@ -382,19 +379,19 @@ div[section="-"]{
 /* ================================================================================================= */
 /* =====================================visibility================================================== */
 
-.--border-radius{
+.item-border--border-radius{
 	border-radius: 50px;
 }
 
-.--box-shadow{
+.item-border--box-shadow{
 	box-shadow: 10px 10px 5px #34C759;
 }
 
-.--opacity{
+.item-border--opacity{
 	opacity: 0.5;
 }
 
-.--visibility{
+.item-border--visibility{
 	/* ffa600 */
 	box-shadow: inset 7px 7px #FF9500;
 	visibility: visible;
@@ -404,36 +401,36 @@ div[section="-"]{
 /* ================================================================================================= */
 /* ==============background-color, background-image, background-image: linear-gradient============== */
 
-.--background-color-green{
+.item-border--background-color-green{
 	background-color: #34C759;
 }
 
-.--background-color-green .border-divider{
+.item-border--background-color-green .border-divider{
 	background-color: #121212;
 }
 
-.--background-image{
+.item-border--background-image{
 	background-image: url('../img/05.png');
 }
 
-.--background-linear-gradient{
+.item-border--background-linear-gradient{
 	background-image: linear-gradient(135deg, #34C759 0%, #FF9500 100%);
 }
 
-.--background-color-orange{
+.item-border--background-color-orange{
 	background-color: #FF9500;
 }
 
 /* ================================================================================================= */
 /* = background-repeat: repeat; , background-repeat: no-repeat; background-repeat: repeat-x; background-repeat: repeat-y; = */
 
-.--repeat{
+.item-border--repeat{
 	background-image: url('../img/04.png');
 	background-repeat: repeat;
 	max-width: 255px;
 	background-size: contain;
 }
-.--no-repeat{
+.item-border--no-repeat{
 	background-image: url('../img/05.png');
 	background-repeat: no-repeat;
 	max-width: 255px;
@@ -441,7 +438,7 @@ div[section="-"]{
 
 }
 
-.--repeat-x{
+.item-border--repeat-x{
 	background-image: url('../img/05.png');
 	background-repeat: repeat-x;
 	max-width: 255px;
@@ -449,7 +446,7 @@ div[section="-"]{
 
 }
 
-.--repeat-y{
+.item-border--repeat-y{
 	background-image: url('../img/04.png');
 	background-repeat: repeat-y;
 	max-width: 255px;
@@ -460,7 +457,7 @@ div[section="-"]{
 /* ================================================================================================= */
 /* = background-position: top; , background-position: right; background-position: right; background-position: left; = */
 
-.--background-position-top{
+.item-border--background-position-top{
 	/* background-image: url('../img/04.png');
 	background-position: top;
 	background-repeat: no-repeat;
@@ -469,18 +466,18 @@ div[section="-"]{
 	max-width: 255px;
 }
 
-.--background-position-right{
+.item-border--background-position-right{
 	background: url('../img/05.png') no-repeat right / contain;
 	max-width: 255px;
 }
 
-.--background-position-bottom{
+.item-border--background-position-bottom{
 	background: url('../img/05.png') no-repeat bottom / contain;
 	max-width: 255px;
 }
 
 
-.--background-position-left{
+.item-border--background-position-left{
 	background: url('../img/04.png') no-repeat left / contain;
 	max-width: 255px;
 }
@@ -488,20 +485,19 @@ div[section="-"]{
 /* ================================================================================================== */
 /* ========================================ATTACHMENT================================================ */
 
-.--background-attachment-fixed{
+.item-border--attachment-fixed{
 	background: url('../img/04.png');
 	background-attachment: fixed;
 	max-width: 255px;
-	background-image: linear-gradient();
 }
 
-.--background-size-cover{
+.item-border--size-cover{
 	background: url('../img/05.png') no-repeat center;
 	background-size: cover;
 	max-width: 255px;
 }
 
-.--background-clip{
+.item-border--clip{
 	background: url('../img/05.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -515,7 +511,7 @@ div[section="-"]{
 	max-width: 255px; */
 }
 
-.--background-size-contain{
+.item-border--size-contain{
 	background: url('../img/04.png') center;
 	background-size: contain;
 	max-width: 255px;
@@ -564,21 +560,17 @@ div[section="-"]{
 	background-image: url(../img/06.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-.hero-container{
 	padding: 80px 0;
 }
 
-.hero-image, .hero-text {
-	display: inline-block;
-	vertical-align: middle;
-	width: 50%;
+.hero-container{
+	max-width: 1392px;
+	margin: 0 auto;
 }
 
-.hero-image img {
-	max-width: 100%;
-	height: auto;
+.hero-image{
+	max-width: 650px;
+	margin-left: auto;
 }
 
 .hero-text {
@@ -602,25 +594,29 @@ div[section="-"]{
 	font-family: "Lato", sans-serif;
 }
 
-.text-content h1 {
+.content-subtitle {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 800;
-	font-size: 96px;
+	font-size: 95px;
 	line-height: 1;
 	color: #2F302C;
 	text-transform: uppercase;
-	margin: 0 0 20px 0;
+	margin-bottom: 20px;
 	word-break: break-all;
 }
 
-.content-line {
-	width: 300px;
-	height: 3px;
-	background-color: #2F302C;
-	margin: 32px 0 36px 10px;
+.content-subtitle + .content-label {
+	margin-top: 36px;
 }
 
-.text-content h3 {
+.content-line {
+	width: 308px;
+	height: 1px;
+	background-color: #2F302C;
+	margin-bottom: 36px;
+}
+
+.content-label {
 	font-family: "Lato", sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -687,7 +683,7 @@ div[section="-"]{
 
 .amount-price {
 	display: inline-block;
-	 vertical-align: middle;
+	vertical-align: middle;
 	font-size: 40px;
 	font-weight: 700;
 	font-family: "Open Sans", sans-serif;
@@ -756,11 +752,11 @@ div[section="-"]{
 
 }
 
-.--active {
+.active {
 	background: url("../img/07.jpg") 0 0 no-repeat;
 }
 
-.--non-active {
+.non-active {
 	background: url("../img/08.jpg") 0 0 no-repeat;
 }
 
